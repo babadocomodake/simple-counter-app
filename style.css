@@ -1,0 +1,77 @@
+/* --- ページ全体の基本設定 --- */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* --- カウンターアプリ全体のコンテナ --- */
+.counter-app {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* --- カウント数を表示する数字のスタイル --- */
+.count-display {
+    font-size: 9rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 1;
+}
+
+/* --- ボタンをまとめるラッパー --- */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* --- ボタンの共通スタイル --- */
+.btn {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    transition: background-color 0.2s, transform 0.1s;
+    user-select: none;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* --- 増減ボタン（円形）のスタイル --- */
+.btn-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+/* --- 各ボタンの色 --- */
+#increment-btn { background-color: #007bff; }
+#increment-btn:hover { background-color: #0056b3; }
+#decrement-btn { background-color: #6c757d; }
+#decrement-btn:hover { background-color: #5a6268; }
+#reset-btn {
+    background-color: #dc3545;
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+#reset-btn:hover { background-color: #c82333; }
